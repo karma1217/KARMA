@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K A R マ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/bfde0c110d.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Logo/karma1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+    <!-------Snow-------------->
+    <div class="snow">
+        <div></div>
+    </div>
+    <!-----------about------------>
+<br>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <div class="cs-left with-circle">
+                        <!--Big Image-->
+                        <picture class="cs-picture cs-picture1" aria-hidden="true">
+                            <source media="(max-width: 600px)" srcset="profile pic/user.jpg">
+                            <source media="(min-width: 601px)" srcset="profile pic/user.jpg">
+                            <img loading="lazy" decoding="async" src="profile pic/user.jpg" alt="main image" width="650"
+                                height="650">
+                        </picture>
+                        <!--Medium Image-->
+                        <picture class="cs-picture cs-picture2" aria-hidden="true">
+                            <source media="(max-width: 600px)" srcset="profile pic/image no1.jpg">
+                            <source media="(min-width: 601px)" srcset="pprofile pic/image no1.jpg">
+                            <img loading="lazy" decoding="async" src="profile pic/image no1.jpg" alt="image beige"
+                                width="290" height="290">
+                        </picture>
+                    </div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Know め</h1>
+                    <p> Mikhaela Delgado is a dedicated college student currently pursuing her Education Major in
+                        Computer Programming at the Technological University of the Philippines.
+                        <br>
+                        <br>
+                        Her passion for creativity is evident in her proficiency in web development, demonstrating an
+                        innovative approach to problem-solving in the digital realm.
+                        <br>
+                        <br>
+                        Mikhaela is driven by her desire to understand the intricacies of programming and considers
+                        herself a lifelong learner, eager to expand her knowledge in computer science and stay updated
+                        with the latest technological advancements.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Character</span><br>Character Design</li>
+                            <li><span>Web Development</span><br>Web Designing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>College Student learning programming</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Technological University of the Philippines</li>
+                            <li><span>2020</span><br>University of Perpetual Help - Molino</li>
+                            <li><span>2018</span><br>Divine Jesus Learning Center</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-----------------------Portfolio------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">ぽ-toforio</h1>
+            <div class="tab-titles center-align">
+                <p class="tab-links active-link" onclick="opentab('character-design', event)">Character Design</p>
+                <p class="tab-links" onclick="opentab('web-development', event)">Web Development</p>
+            </div>
+            <div class="tab-contents active-tab" id="character-design">
+                <div class="tab-contents active-tab" id="character-design"></div>
+                <div class="slide hi-slide">
+                    <div class="hi-prev"></div>
+                    <div class="hi-next"></div>
+                    <ul>
+                        <li><img class="myImg" src="Character Design/work1.0.png" alt=""></li>
+                        <div id="myModal1" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <img class="modal-img">
+                                <div class="caption"></div>
+                            </div>
+                        </div>
+                        <li><img class="myImg" src="Character Design/work2.png" alt=""></li>
+                        <div id="myModal2" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <img class="modal-img">
+                                <div class="caption"></div>
+                            </div>
+                        </div>
+                        <li><img class="myImg" src="Character Design/work3.1.png" alt=""></li>
+                        <div id="myModal2" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <img class="modal-img">
+                                <div class="caption"></div>
+                            </div>
+                        </div>
+                        <li><img class="myImg" src="Character Design/work4.png" alt=""></li>
+                        <div id="myModal2" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <img class="modal-img">
+                                <div class="caption"></div>
+                            </div>
+                        </div>
+                        <li><img class="myImg" src="Character Design/work5.png" alt=""></li>
+                        <div id="myModal2" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <img class="modal-img">
+                                <div class="caption"></div>
+                            </div>
+                        </div>
+                        <li><img class="myImg" src="Character Design/dream (2).jpg" alt=""></li>
+                        <div id="myModal2" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <img class="modal-img">
+                                <div class="caption"></div>
+                            </div>
+                        </div>
+                        <li><img class="myImg" src="Character Design/halloween1.png" alt=""></li>
+                        <div id="myModal2" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <img class="modal-img">
+                                <div class="caption"></div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-contents" id="web-development">
+            <div class="gallery-container">
+                <div class="image-container" onclick="openModal('about-me-modal')">
+                    <img src="web dev/about me.png" alt="Landscape Image 1" class="landscape-image">
+                    <div class="overlay">
+                        <div class="text">About Me</div>
+                    </div>
+                </div>
+                <div class="image-container" onclick="openModal('erebus-modal')">
+                    <img src="web dev/erebus.png" alt="Landscape Image 2" class="landscape-image">
+                    <div class="overlay">
+                        <div class="text">Erebus</div>
+                    </div>
+                </div>
+                <div class="image-container" onclick="openModal('graphamare-modal')">
+                    <img src="web dev/graphamare.jpg" alt="Landscape Image 3" class="landscape-image">
+                    <div class="overlay">
+                        <div class="text">Graphamare</div>
+                    </div>
+                </div>
+                <div class="image-container" onclick="openModal('compilations-modal')">
+                    <img src="web dev/one piece.png" alt="Landscape Image 4" class="landscape-image">
+                    <div class="overlay">
+                        <div class="text">Compilations</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modals -->
+        <div id="about-me-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('about-me-modal')">&times;</span>
+                <img src="web dev/about me.png" alt="About Me" class="modal-img">
+                <p>This is the About Me section of the portfolio.</p>
+            </div>
+        </div>
+        
+        <div id="erebus-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('erebus-modal')">&times;</span>
+                <img src="web dev/erebus.png" alt="Erebus" class="modal-img">
+                <p>This is the Erebus project section of the portfolio.</p>
+            </div>
+        </div>
+        
+        <div id="graphamare-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('graphamare-modal')">&times;</span>
+                <img src="web dev/graphamare.jpg" alt="Graphamare" class="modal-img">
+                <p>This is the Graphamare project section of the portfolio.</p>
+            </div>
+        </div>
+        
+        <div id="compilations-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('compilations-modal')">&times;</span>
+                <img src="web dev/one piece.png" alt="Compilations" class="modal-img">
+                <p>This is the Compilations section of the portfolio.</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.hislide.min.js"></script>
+    <script src="js/jquery.hislide.min.css"></script>
+    <script src="js/jquery.hislide.js"></script>
+    <script src="script.js"></script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!---------------------Contact----------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> mikhaelaangeline.delgado@gsfe.tupcavite.edu.</p>
+                    <p><i class="fa-solid fa-phone"></i> 09936484261</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/mikhaelaangeline.delgado"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/imim1217/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Mikhaela <i class="fa-solid fa-heart"></i>.</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const characterSwiper = new Swiper('.character-slider', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        const logoSwiper = new Swiper('.logo-slider', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+</body>
+</html>

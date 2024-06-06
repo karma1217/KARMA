@@ -303,6 +303,17 @@
             },
         });
     </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby7a6tZ7-PZy0Fcq5MRfhMAMUc_Wp1yrk17jcwpRpzcjjA5ga1-jgf91ofm5PADQa0xHw/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
